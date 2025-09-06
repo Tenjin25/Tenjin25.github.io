@@ -1,0 +1,133 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Shamar Davis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Shamar Davis</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">View My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Shamar Davis, a computer programming student graduating with an associate's degree in 2026. Originally planning for a career in software development, I discovered a passion for data visualization, political analysis, and making complex information accessible—much like the work of Steve Kornacki and data journalists during election season.</p>
+            <p>My projects combine technical skill with a drive to tell meaningful stories through data. After overcoming major health challenges, I’m more motivated than ever to use my skills to inform, engage, and empower others. I’m excited to explore opportunities in data journalism, election analysis, or any field where technology and storytelling meet.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project" style="grid-column: 1 / -1;">
+                    <h3>NC Political Realignment Map (2008-2024) <span style="font-size:0.8em; color:#888;">(Featured Project)</span></h3>
+                    <p><strong>NC Political Realignment Map (2008-2024)</strong> is a comprehensive, interactive web application for visualizing North Carolina’s county and precinct-level election results and trends. It leverages Mapbox GL JS for map rendering and Python scripts for data processing and normalization.</p>
+                    <ul>
+                        <li>Interactive county and precinct maps with color-coded partisan margins</li>
+                        <li>Sidebar with detailed county analysis and research findings</li>
+                        <li>Dynamic swing arrow visualizations for election comparisons</li>
+                        <li>Robust backend data merging and normalization</li>
+                        <li>Responsive UI with customizable controls and real-time status feedback</li>
+                    </ul>
+                    <div style="background:#f1f8ff; border-left:4px solid #3498db; padding:1em; margin:1.5em 0; border-radius:6px;">
+                        <strong>Latest Updates from August 24:</strong>
+                        <ul>
+                            <li><strong>Instant County Zoom:</strong> Instantly zoom to any county by typing its name in the sidebar search box for fast navigation and comparison.</li>
+                            <li><strong>UI & Readability Upgrades:</strong> Ballotpedia-standard R+/D+ margins, clearer statewide results, improved tossup clarity, and standardized formatting for a more professional look.</li>
+                            <li><strong>Behind-the-Scenes Improvements:</strong> Codebase cleanup for reliability, better error handling, and manual data overrides for enhanced accuracy.</li>
+                        </ul>
+                    </div>
+                    <p style="font-size:0.97em; color:#444; margin-top:0.5em;">
+                    <p>As the lead developer, I was responsible for the full-stack architecture, UI/UX design, and data integration. The project demonstrates advanced skills in web mapping, data visualization, and modern JavaScript frameworks.</p>
+                    <p style="font-size:0.95em; color:#888; margin-top:-1rem; margin-bottom:1rem;">This project is actively maintained and improved with new features and updates as needed. Development began in July 2025.<br>
+                    <span style="color:#444;">An enhanced version with interactive precincts is in development and planned for release by the end of 2025. This is the latest stable version.</span></p>
+                    <p style="font-size:0.97em; color:#444; margin-top:0.2em;">I was motivated to keep working on this project through August by my passion for data accuracy, my interest in political trends, and a desire to create a valuable tool for others. I was also frustrated by the binary color schemes used by news organizations—especially after elections—and wanted all the data in one place for easy, on-the-fly comparison. Additionally, this project gave me the opportunity to practice the program development cycle on a real-world application I built from scratch. Once everything was working well, I felt like a mix of Agent Smith and Steve Kornacki, diving deep into the code and data to uncover insights and patterns.<br><br>Another motivation for all of these projects was surviving two undiagnosed life-threatening emergencies in the spring—and living to tell people about it. That experience inspired me to make the most of my time and share something meaningful.</p>
+                    <ul>
+                        <li><strong>Key Features:</strong> Interactive maps, demographic filters, election data visualization, custom district drawing, and export options.</li>
+                        <li><strong>Main resources used:</strong> Mapbox GL JS, Turf.js, scripts/common.js, styles/common.css, preview.png</li>
+                        <li><strong>Role:</strong> Primary developer and designer (90% of the work), with GitHub Copilot as an aid—not a crutch. Responsible for full-stack architecture, UI/UX, and data integration.</li>
+                    </ul>
+                        <p style="font-size:0.97em; color:#444; margin-top:0.2em;"><strong>Data sources:</strong> Official election data from NCSBE, county shapefiles from NCOneMap (NCDOT), and Census VTDs from the U.S. Census Bureau.<br>
+                        County data was cross-referenced with Ballotpedia for accuracy to ensure correct data merging. The same formula and decimal display as Ballotpedia was used for a professional look.</p>
+                        <details style="margin-top:0.5em;">
+                            <summary style="font-weight:bold; cursor:pointer;">What do the Color-Coded Categories Mean?</summary>
+                            <ul style="margin-top:0.5em;">
+                                <li><strong>Annihilation (40%+ margin):</strong> Landslide victory, safe stronghold.</li>
+                                <li><strong>Dominant (30-40% margin):</strong> Very safe seat, slightly less extreme than Annihilation.</li>
+                                <li><strong>Stronghold (20-30% margin):</strong> Reliably safe for the winning party.</li>
+                                <li><strong>Safe (10-20% margin):</strong> Considered safe, but not impenetrable.</li>
+                                <li><strong>Likely (5.5-10% margin):</strong> Clear advantage, but could become competitive.</li>
+                                <li><strong>Lean (1-5.5% margin):</strong> Competitive, modest advantage for the winner.</li>
+                                <li><strong>Tilt (0.5-1% margin):</strong> Extremely competitive, slight edge for the winner.</li>
+                                <li><strong>Tossup (±0.5% margin):</strong> True battleground, no clear favorite.</li>
+                            </ul>
+                            <p style="margin-top:0.5em;">These categories help users quickly identify which areas are safe for each party, which are competitive, and where political realignment is occurring.</p>
+                        </details>
+                    <p>
+                        <a href="https://github.com/Tenjin25/NCPoliticalMap" target="_blank">View on GitHub</a>
+                    </p>
+                    <img src="https://raw.githubusercontent.com/Tenjin25/NCPoliticalMap/main/Screenshots/County_Map.png" alt="2024 Presidential Election Map using NC Political Realignment Map rating system" style="max-width:100%; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-top:1rem;" />
+                    <p style="font-size:0.95em; color:#555; margin-top:0.5rem;">2024 presidential election mapped out using my custom rating system in NC Political Realignment Map.</p>
+                    <p style="font-size:0.97em; color:#444; margin-top:0.5em;">The colors get deeper as the margins increase, just like in my map of the 2024 presidential election.</p>
+                    <img src="https://raw.githubusercontent.com/Tenjin25/NCPoliticalMap/main/Screenshots/screenshot_legend.png" alt="Legend of color-coded categories for NC Political Realignment Map" style="max-width:400px; display:block; margin:1em auto 0.5em auto; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.08);" />
+                    <div style="background:#f8fafc; border-left:4px solid #3182bd; padding:1em; margin:1.5em 0; border-radius:6px;">
+                        <strong>Community Insight:</strong> I’m from South Carolina, but when I shared the live demo of this map on Reddit’s r/NCpolitics, a Robeson County resident commented with this story:<br><br>
+                        <em>"Robeson county resident here, We were voting blue for president ever since Richard Nixon's Watergate scandal. 36 years. What changed (at least in my county) is that we got hit by 2 once-in-a-century hurricanes in 2016 and 2018. Hurricane Matthews aftermath in 2016 left a lot of people wanting to move out and they did towards the democratic areas of Hoke and Cumberland County, Leaving Robeson County a lot more purple than blue. Trump himself sent a lot of money in food and water to help out the largest city here and even sent down his daughter-in-law to a community center that was housing people whose homes were flooded, leading my county to go Red for the first time in those 36 years.<br><br>
+                        It is striking to see Robeson go from cautious blue to ruby red but with that context, The fact that the native tribe here has seen failure in federal recognition under democrats (Even when there was a member of the tribe running for congress in 2022 as a democrat), and that we are a very religious place both in the rural parts of a rural county and the two cities who fight for dominance, You can see the reason why we went such a direction to the right that I still feel the whiplash nearly 9 years after that hurricane."</em><br><br>
+                        This kind of feedback let me know I achieved my goal: connecting data to real stories and helping others understand the forces behind the numbers.
+                    </div>
+                </div>
+                <div class="project" style="grid-column: 1 / -1;">
+                    <h3>Florida Realignment <span style="font-size:0.8em; color:#888;">(Featured Project)</span></h3>
+                    <p><strong>Florida Realignment</strong> is an interactive mapping tool for visualizing Florida's political landscape and the impact of redistricting. Users can explore the 2024 presidential election results using my custom rating system, analyze county-level data, and view dynamic, color-coded maps.</p>
+                    <p style="font-size:0.95em; color:#888; margin-top:-1rem; margin-bottom:1rem;">Work in progress: This project is under active development and new features are being added regularly.</p>
+                    <ul>
+                        <li><strong>Key Features:</strong> Interactive Florida map, election data overlays, custom rating system, and responsive design.</li>
+                        <li><strong>Technologies:</strong> JavaScript, Leaflet.js, HTML5, CSS3, GitHub Pages.</li>
+                        <li><strong>Role:</strong> Creator and sole developer. Designed the rating system and implemented the mapping interface.</li>
+                    </ul>
+                    <p>
+                        <a href="https://tenjin25.github.io/FLRealignment/" target="_blank">View Live on GitHub Pages</a> |
+                        <a href="https://github.com/Tenjin25/FLRealignment/tree/main" target="_blank">View on GitHub</a>
+                    </p>
+                    <img src="https://raw.githubusercontent.com/Tenjin25/FLRealignment/main/Screenshots/2024_FL_Map.png" alt="2024 Florida Presidential Election Map using custom rating system" style="max-width:100%; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.08); margin-top:1rem;" />
+                    <p style="font-size:0.95em; color:#555; margin-top:0.5rem;">2024 Florida presidential election mapped out using my custom rating system in Florida Realignment.</p>
+                    <p style="font-size:0.97em; color:#444; margin-top:0.5em;">This project uses the same color-coded competitiveness categories as the NC Political Realignment Map.</p>
+                </div>
+                <div class="project">
+                    <h3>Margin of Victory</h3>
+                    <p><strong>Margin of Victory</strong> is a data analysis project that visualizes and compares the margin of victory in U.S. presidential elections at the county level. It started as a simple Java calculator app, which I modified to calculate the winner's margin of victory and assign a rating based on the output, electoral competitiveness, and trends.</p>
+                    <ul>
+                        <li>Margin of Victory calculation and professional race rating system (Tossup, Tilt, Lean, Likely, Safe).</li>
+                        <li>Winner and party determination, flip detection, and robust input validation.</li>
+                        <li>Real-world case studies and split-ticket voting analysis included in documentation.</li>
+                    </ul>
+                    <p style="font-size:0.97em; color:#444; margin-top:0.2em;">This project inspired the creation of NC Political Realignment Map and Florida Realignment.</p>
+                    <p>
+                        <a href="https://github.com/Tenjin25/MarginofVictory" target="_blank">View on GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:Shamard415@gmail.com">Shamard415@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/shamar-davis/" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shamar Davis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
